@@ -1,0 +1,336 @@
+:root {
+    --morado: #232E66;
+    --azul: #37459D;
+    --azulMarino: #0a123b;
+    --verde: #A38211;
+    --amarillo: #EFC422;
+    --blanco: #FFFFFF;
+    --gris: #DDDDDD;
+    --negro: #000000;
+    --grisOscuro: #505050;
+    --grisMasOscuro: #222121;
+    --gradienteAzulBlanco: linear-gradient(to top left, var(--azul), var(--blanco) ) ;
+    --gradienteAzulMarinoNegro: linear-gradient(to top left, var(--azulMarino), var(--negro) ) ;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sección de ultimo vídeo */
+
+header section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 2rem 0;
+    margin-left: 20%;
+    background-color: var(--blanco);
+    border-radius: 2em;
+    box-shadow: 0 0.2rem 0.5rem #000000;
+    transition: all 0.5s ease-in;
+}
+
+body.dark header section {
+    background-color: var(--negro);
+}
+
+header section aside {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 2.5%;
+}
+
+header section aside h1 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-family: 'coolvetica';
+    font-weight: 400;
+}
+
+body.dark header section aside h1{
+    color: var(--gris);
+}
+
+header section aside iframe {
+    width: 80%;
+    height: 22rem;
+    padding-bottom: 2rem;
+}
+
+header section form {
+    width: 30%;
+    height: 28rem;
+    margin: auto 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--azul);
+    color: var(--gris);
+    border-radius: 2rem;
+    transition: all 0.5s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.5rem #000000;
+}
+
+body.dark section form {
+    background-color: var(--azulMarino);
+}
+
+header section form p {
+    width: 90%;
+    margin: 0 5%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'coolvetica';
+}
+
+header section form input {
+    background-color: var(--blanco);
+    color: var(--grisOscuro);
+    padding: 0.5rem;
+    border: none;
+    width: 90%;
+    margin: 0.5rem 2.5%;
+    border-radius: 0.5rem;
+    font-family: 'constantia';
+    font-weight: 400;
+} 
+
+body.dark header section form input {
+    background-color: var(--negro);
+    color: var(--grisOscuro);
+}
+
+header section form input:nth-child(4) {
+    background-color: var(--blanco);
+    color: var(--grisOscuro);
+    padding: 0.5rem;
+    border: none;
+    width: 90%;
+    height: 10rem;
+    margin: 0.5rem 2.5%;
+}
+
+header section form button {
+    width: 40%;
+    margin: 1rem 30%;
+    border: none;
+    padding: 0.5rem;
+    background-image: var(--gradienteAzulBlanco);
+    border-radius: 0.5rem;
+    color: var(--gris);
+    font-weight: 400;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 500;
+    box-shadow: 0.2rem 0.2rem 0.5rem #000000;
+    transition: all 0.5s ease-in;
+}
+
+body.dark header section form button {
+    background-image: var(--gradienteAzulMarinoNegro);
+} 
+
+/* Sección de creadores */
+
+.sesión {
+    display: flex;
+    background-color: var(--azul);
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    border-bottom: 0.2em solid var(--gris);
+    transition: all 0.5s ease;
+}
+
+body.dark .sesión {
+    background-color: var(--azulMarino);
+    color: var(--blanco);
+}
+
+.sesión header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem auto;
+}
+
+.sesión header h2 {
+    width: 40%;
+    font-size: 4rem ;
+    text-align: center;
+    color: var(--blanco);
+    margin: 1rem 5%;
+    font-family: 'Polished';
+    font-weight: 300;
+    transition: all 0.5s ease;
+}
+
+.sesión header img {
+    width: 6rem;
+    margin: 2rem auto;
+}
+
+.sesión figure {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: var(--blanco);
+    box-shadow: 0.5rem 0.4rem 0.5rem #000;
+    border-radius: 0 2rem 2rem 0;
+    transition: all 0.5s ease;
+}
+
+body.dark .sesión figure {
+    background-color: var(--negro);
+    color: var(--gris);
+}
+
+.sesión figure img {
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.sesión figure aside {
+    width: 90%;
+    margin: 5%;
+    font-family: 'coolvetica';
+}
+
+.sesión section {
+    width: 50%;
+    margin: 1rem 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--blanco);
+    border-radius: 2rem;
+    box-shadow: 0.4rem 0.4rem 0.5rem var(--negro);
+    transition: all 0.5s ease;
+}
+
+body.dark .sesión section {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.sesión section h3 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'constantia';
+}
+
+.sesión section p {
+    width: 80%;
+    margin: 2em 10%;
+    font-family: 'coolvetica';
+}
+
+.sesión iframe {
+    width: 30rem;
+    height: 20rem;
+    margin: 3rem 10%;
+}
+
+/* Pie de contacto */
+
+footer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    background-color: var(--blanco);
+    transition: all 0.5s ease;
+}
+
+body.dark footer {
+    background-color: var(--negro);
+    color: var(--gris);
+}
+
+footer header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+footer header h2 {
+    width: 50%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Polished';
+    font-weight: 300;
+}
+
+footer header img {
+    width: 6rem;
+}
+
+footer section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer section h3 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: 'coolvetica';
+}
+
+footer section .redesSociales {
+    width: 75%;
+    margin: 1rem 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer section .redesSociales img {
+    width: 4rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+footer p {
+    width: 80%;
+    margin: 1em 10%;
+    text-align: center;
+    font-family: 'constantia';
+}

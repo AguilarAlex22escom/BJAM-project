@@ -1,0 +1,173 @@
+:root {
+    --morado: #232E66;
+    --azul: #37459D;
+    --verde: #A38211;
+    --amarillo: #EFC422;
+    --blanco: #FFFFFF;
+    --gris: #DDDDDD;
+    --grisOscuro: #505050;
+    --gradienteAzulBlanco: linear-gradient(to top left, #37459D, #FFFFFF ) ;
+}
+
+#container {
+    width: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+    transition: all 0.4s ease;
+}
+
+body.dark {
+    background-color: var(--grisMasOscuro);
+}
+
+#container header .inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0.2rem 0.5rem #000000;
+    width: 100%;
+    height: 10em;
+    margin: auto 0;
+    border-bottom: 0.1rem solid var(--gris);
+    backdrop-filter: blur(0.5rem);
+}
+
+#container header .inicio figure.logo {
+    display: flex;
+    width: 15%;
+    position: relative;
+    padding: 0.4rem;
+}
+
+#container header .inicio figure.logo img {
+    padding: 2rem;
+    height: 8rem;
+    cursor: pointer;
+}
+
+/* Barra de creadores de contenido */
+
+#container header .inicio .creadores {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+#container header .inicio .creadores h2 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Polished';
+    padding: 0.5rem;
+}
+
+#container header .inicio .creadores figure {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}    
+
+#container header .inicio .creadores figure img {
+    width: 3rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}    
+
+/* Modo nocturno */
+
+#container header .inicio .modo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 7rem;
+    height: 3rem;
+    background-color: #444444;
+    border-radius: 3rem 3rem;
+    border: none;
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+
+#container header .inicio .modo::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--blanco);
+    box-shadow: 0 0 1rem #000000;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    cursor: pointer;
+}
+
+#container header .inicio .modo.active {
+    background-color: var(--amarillo);
+}
+
+#container header .inicio .modo.active::after {
+    right: 0;
+    left: unset;
+}
+
+#container header .inicio .modo img {
+    width: 2.5rem;
+    border: none;
+    display: block;
+}
+
+/* Banner */
+
+#container video {
+    width: 100%;
+}
+
+/* Barra de navegación */
+
+nav {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 10em;
+    padding-top: 1em ;
+    padding-bottom: 1em;
+    background-color: #000000;
+}
+
+nav button {
+    width: 100%;
+    height: 3rem;
+    background-color: #000;
+    border: none;
+    border-bottom: 0.2em solid var(--amarillo);
+    transition: all 0.5s ease;
+}
+
+nav button a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--gris);
+    font-family: 'coolvetica';
+    position: static;
+    transition: all 0.5s ease;
+}
+
+nav button a:hover {
+    color: var(--amarillo);
+}
